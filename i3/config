@@ -36,7 +36,10 @@ bindsym $mod+t exec --no-startup-id alacritty
 
 # bind screenshot
 bindsym $mod+Shift+Print exec --no-startup-id flameshot gui
-bindsym $mod+Print exec flameshot full
+bindsym $mod+Print exec --no-startup-id flameshot full
+
+bindsym $mod+p move scratchpad
+bindsym $mod+shift+p scratchpad show
 
 # start rofi
 bindsym ctrl+space exec rofi -show run
