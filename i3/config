@@ -39,8 +39,8 @@ bindsym $mod+p exec --no-startup-id flameshot gui
 bindsym $mod+shift+p exec --no-startup-id flameshot full
 
 # scratch pad
-bindsym $mod+s move scratchpad
-bindsym $mod+shift+s scratchpad show
+bindsym $mod+shift+s move scratchpad
+bindsym $mod+s scratchpad show
 
 # start rofi
 bindsym ctrl+space exec rofi -show run
@@ -194,7 +194,7 @@ mode "$mode_launcher" {
 
 # bind chrome
 # set $mode_launcher Launch: [n]chrome
-bindsym $mod+o mode "$mode_launcher"
+# bindsym $mod+o mode "$mode_launcher"
 
 # keyboard layout
 exec --no-startup-id setxkbmap -v us -variant colemak
