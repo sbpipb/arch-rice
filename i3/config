@@ -34,19 +34,24 @@ floating_modifier $mod
 # bindsym $mod+t exec termite
 bindsym $mod+t exec --no-startup-id alacritty
 
+bindsym $mod+i exec google-chrome-stable "https://insuredbyus.slack.com"
+bindsym $mod+m exec google-chrome-stable "https://mashupventures.slack.com"
+
 # bind screenshot
 bindsym $mod+p exec --no-startup-id flameshot gui
 bindsym $mod+shift+p exec --no-startup-id flameshot full
 
 # scratch pad
-bindsym $mod+s move scratchpad
-bindsym $mod+shift+s scratchpad show
+bindsym $mod+shift+s move scratchpad
+bindsym $mod+s scratchpad show
 
 # start rofi
 bindsym ctrl+space exec rofi -show run
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# bindsym $mod+k exec killall zoom
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -185,7 +190,8 @@ mode "resize" {
 
 # accessibility and shortcuts
 bindsym $mod+r mode "resize"
-bindsym $mod+n exec chromium
+# bindsym $mod+n exec chromium
+bindsym $mod+n exec google-chrome-stable
 
 mode "$mode_launcher" {
   bindsym Escape mode "default"
@@ -194,7 +200,7 @@ mode "$mode_launcher" {
 
 # bind chrome
 # set $mode_launcher Launch: [n]chrome
-bindsym $mod+o mode "$mode_launcher"
+# bindsym $mod+o mode "$mode_launcher"
 
 # keyboard layout
 exec --no-startup-id setxkbmap -v us -variant colemak
@@ -214,3 +220,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 default_border pixel 2
 default_floating_border pixel 2
 # exec_always --no-startup-id redshift
+
+client.focused #f78e2c #FF5710 #03a87c  #c065db #ccccff
