@@ -434,7 +434,7 @@ margin-bottom = 50
 type = internal/date
 interval = 2
 ; date = %%{F#999}%Y-%m-%d%%{F-}  xx  %%{F#fff}%H:%M%%{F-}
-date = %%{F#999}%m-%d%%{F-}  //  %%{F#fff}%H:%M%%{F-}
+date = %%{F#999}%m-%d%%{F-}  //  %%{F#fff}%I:%M%p%%{F-}
 
 
 [module/datetime]

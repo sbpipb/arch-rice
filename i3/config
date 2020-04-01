@@ -206,9 +206,9 @@ mode "$mode_launcher" {
 exec --no-startup-id setxkbmap -v us -variant colemak
 
 # aesthetics
-gaps inner 20
+gaps inner 12
 # gaps outer 30
-# smart_gaps on
+smart_gaps on
 # smart_gaps off
 
 # colour schemes
