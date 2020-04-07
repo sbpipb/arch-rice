@@ -1,0 +1,3 @@
+# Arch Rice
+
+Opinionated setup
