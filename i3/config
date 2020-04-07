@@ -34,7 +34,6 @@ floating_modifier $mod
 # bindsym $mod+t exec termite
 bindsym $mod+t exec --no-startup-id alacritty
 
-bindsym $mod+i exec google-chrome-stable "https://insuredbyus.slack.com"
 bindsym $mod+m exec google-chrome-stable "https://mashupventures.slack.com"
 
 # bind screenshot
