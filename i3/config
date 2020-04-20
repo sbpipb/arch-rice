@@ -146,8 +146,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
-#  bindsym $mod+Shift+Delete exec betterlockscreen --lock dimblur -- --timestr "%l:%H:%S %p"
- bindsym $mod+d exec betterlockscreen --lock dimblur -- --timestr "%l:%H:%S %p"
+# lock screen
+bindsym $mod+d exec betterlockscreen --lock dimblur -- --timestr "%l:%H:%S %p" -t "locke"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
